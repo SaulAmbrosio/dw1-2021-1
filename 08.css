@@ -6,7 +6,7 @@ a{
 
 /*Links já visitados*/
 a:visited{
-    filter: brightness(50%); /*Cor mais escura*/
+    color: darksalmon;
 }
 
 /*Link enquanto o mouse está sobre ele*/
