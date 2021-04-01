@@ -20,3 +20,7 @@ figcaption {
     font-style: italic;
     text-align: center;
 }
+
+.home{
+    display: block;
+}
