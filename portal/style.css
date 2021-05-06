@@ -1,12 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /*CSS reset*/
 *{
     padding: 0;
     margin: 0;
+    /*Sem serifa*/
+    /*font-family: Calibri, Arial, sans;*/
+
+    /*Com serifa*/
+    /*font-family: Georgia, 'Times New Roman', serif;*/
+
+    /*Monoespaçada*/
+    /*font-family: Consolas, 'Courier News',monospace;*/
+
+    /*Web-Fonts*/
+    font-family: Raleway, Calibri, Arial, sans;
 }
 
 header{
     background-color: #550000;
     padding: 10px 20px;
+}
+
+nav{
+    background-color: #FF7F2A;
+    color: #FFFFFF;
 }
 
 nav ul li{
