@@ -4,6 +4,7 @@
 :root{
     --cor-primaria:#550000;
     --cor-secundaria: #FF7F2A;
+    --cor-secundaria-clara: #FFAF7B;
     --cor-fundo-clara: #DDDDDD;
     --cor-fundo-escura: #BBBBBB;
     --cor-texto-claro: #FFFFFF;
@@ -69,22 +70,23 @@ nav ul li{
 
 section{
     background-color: var(--cor-texto-claro);
-    padding: 10px;
+    padding: 24px;
     margin-bottom: 20px;
     /*bordas arredondadas*/
     border-radius: 10px;
     /*Sombra (drop-down shadow)*/
     box-shadow: 3px 3px 10px rgba(0,0,0,0.25);
-    flex-grow: 1; /*1 unidade de largura*/
+    flex-grow: 1;
 }
 
 #principal{
-    flex-grow: 3; /*3 unidades de largura*/
+    width: 75%;
 }
 
 #secundario{
     margin-left: 20px;
     background-color: var(--cor-fundo-escura);
+    width: 25%;
 }
 
 section article{ /*artigos que estão dentro de uma section*/
@@ -106,4 +108,49 @@ article > h1 > a{  /*Apenas os h1 que são filhos diretos de article*/
 
 article > p{
     color: var(--cor-texto-escura);
+}
+
+article > h2{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.destaque{
+    background-color: var(--cor-secundaria-clara);
+    padding: 24px;
+    border-radius: 4px;
+}
+
+.destaque p{
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.destaque > h1 > a{
+    font-size: 2.5rem;
+}
+
+.destaque > h2 {
+    font-size: 1rem;
+}
+
+.destaque img{
+    width: 450px;
+    margin-right: 24px;
+    border-radius: 4px;
+}
+
+.foto-texto{
+    display: flex;
+    flex-direction: row;
+}
+
+#secundario > aside > img{
+    display: block;
+    margin: 0 auto; /*margin auto a esquerda e a direita centraliza o elemento quando este é display: block */
+}
+
+#secundario > aside > h1 > a{
+    font-size: 1rem;
+    color: #000;
 }
